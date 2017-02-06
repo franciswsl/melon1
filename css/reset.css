@@ -1,0 +1,12 @@
+
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{margin: 0;padding: 0;}
+ol,ul,li{list-style: none;}
+a{text-decoration: none;color: #678532;}
+img{border: none;width: 100%;}
+i{font-style: normal;display: inline-block;}
+
+@font-face{font-family: 'SourceHanSansCN-Light';src:url('../font/SourceHanSansCN-Light.otf');}
+@font-face{font-family: '方正兰亭黑-GBK';src:url('../font/方正兰亭黑-GBK.TTF');}
+@font-face{font-family: '方正兰亭特黑-GBK';src:url('../font/方正兰亭特黑-GBK.TTF');}
+@font-face{font-family: 'PFDinTextCompPro-ThinItal';src:url('../font/PFDinTextCompPro-ThinItal.ttf');}
+@font-face{font-family: '文悦新青年体-NC-W8';src:url('../font/文悦新青年体-NC-W8.otf');}

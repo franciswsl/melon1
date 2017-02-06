@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script type="text/javascript" src="js/banner.js"></script>
+	<script type="text/javascript"> 
+		function contentTab(id) {
+			if(id=='group1'){
+				document.getElementById('group1').style.display='block';
+				document.getElementById('group2').style.display='none';
+				document.getElementById('group3').style.display='none';
+				document.getElementById('tab1').className = 'checked';
+				document.getElementById('tab2').className = '';
+				document.getElementById('tab3').className = '';
+			}
+			else if(id=='group2'){
+				document.getElementById('group1').style.display='none';
+				document.getElementById('group2').style.display='block';
+				document.getElementById('group3').style.display='none';
+				document.getElementById('tab1').className = '';
+				document.getElementById('tab2').className = 'checked';
+				document.getElementById('tab3').className = '';
+			}
+			else{
+				document.getElementById('group1').style.display='none';
+				document.getElementById('group2').style.display='none';
+				document.getElementById('group3').style.display='block';
+				document.getElementById('tab1').className = '';
+				document.getElementById('tab2').className = '';
+				document.getElementById('tab3').className = 'checked';
+			}
+		}
+	</script> 
+</head>
+<body>
+	<!-- 轮播图 -->
+	<div id="index-banner">
+		<div id="banner-container">
+			<a href="#" id="banner-info"></a>
+			<ul id="list"></ul>
+			<div id="banner-list">
+				<a href="#" target="_blank"><img src="img/banner1.jpg" alt="双色冰淇淋" /></a>
+				<a href="#" target="_blank"><img src="img/banner2.jpg" alt="双色冰淇淋" /></a>
+	            <a href="#" target="_blank"><img src="img/banner3.jpg" alt="双色冰淇淋" /></a>
+	            <a href="#" target="_blank"><img src="img/banner4.jpg" alt="双色冰淇淋" /></a>
+			</div>
+			<div id="index-header">
+				<div id="register">注册</div>
+				<div id="login">登录</div>
+			</div>
+		</div>
+	</div>
+	<!-- 导航条 -->
+	<div id="index-main">
+		<div id="public-container">
+			<div class="navbar" id="nav">
+				<ul>
+					<li id="tab1" onclick="contentTab('group1')">品·瓜</li>
+					<li id="tab2" onclick="contentTab('group2')">品·果</li>
+					<li id="tab3" onclick="contentTab('group3')">品·菜</li>
+				</ul>
+			</div>
+			<div class="groupdiv">
+				<div id="group1">
+				<ul>
+					<li class="pro1">
+						<div class="photo"><img src="img/pro1.jpg"></div>
+						<div class="rsp"></div>
+						<div class="text"><h3>双色冰淇淋西瓜</h3><i>&yen;198.00/个</i><p>火热预售中</p><a href="detail.html" target="_self">点击了解更多</a></div>
+					</li>
+					<li class="pro2">
+						<div class="photo"><img src="img/pro2.jpg"></div>
+						<div class="rsp"></div>
+						<div class="text"><h3>双色冰淇淋西瓜</h3><i>&yen;198.00/个</i><p>火热预售中</p><a href="detail.html" target="_self">点击了解更多</a></div>
+					</li>
+					<li class="pro3">
+						<div class="photo"><img src="img/pro3.jpg"></div>
+						<div class="rsp"></div>
+						<div class="text"><h3>双色冰淇淋西瓜</h3><i>&yen;198.00/个</i><p>火热预售中</p><a href="detail.html" target="_self">点击了解更多</a></div>
+					</li>
+					<li class="more"><a href="#">更多品种</a></li>
+				</ul>
+				</div>
+				<div id="group2">
+					<ul>
+						<li class="pro1">
+							<div class="photo"><img src="img/pro1.jpg"></div>
+							<div class="rsp"></div>
+							<div class="text"><h3>双色冰淇淋西瓜</h3><i>&yen;198.00/个</i><p>火热预售中</p><a href="detail.html" target="_self">点击了解更多</a></div>
+						</li>
+						<li class="pro2">
+							<div class="photo"><img src="img/pro1.jpg"></div>
+							<div class="rsp"></div>
+							<div class="text"><h3>双色冰淇淋西瓜</h3><i>&yen;198.00/个</i><p>火热预售中</p><a href="detail.html" target="_self">点击了解更多</a></div>
+						</li>
+						<li class="pro3">
+							<div class="photo"><img src="img/pro1.jpg"></div>
+							<div class="rsp"></div>
+							<div class="text"><h3>双色冰淇淋西瓜</h3><i>&yen;198.00/个</i><p>火热预售中</p><a href="detail.html" target="_self">点击了解更多</a></div>
+						</li>
+						<li class="more"><a href="#">更多品种</a></li>
+					</ul>
+				</div>
+				<div id="group3">
+					<ul>
+						<li class="pro1">
+							<div class="photo"><img src="img/pro2.jpg"></div>
+							<div class="rsp"></div>
+							<div class="text"><h3>双色冰淇淋西瓜</h3><i>&yen;198.00/个</i><p>火热预售中</p><a href="detail.html" target="_self">点击了解更多</a></div>
+						</li>
+						<li class="pro2">
+							<div class="photo"><img src="img/pro2.jpg"></div>
+							<div class="rsp"></div>
+							<div class="text"><h3>双色冰淇淋西瓜</h3><i>&yen;198.00/个</i><p>火热预售中</p><a href="detail.html" target="_self">点击了解更多</a></div>
+						</li>
+						<li class="pro3">
+							<div class="photo"><img src="img/pro2.jpg"></div>
+							<div class="rsp"></div>
+							<div class="text"><h3>双色冰淇淋西瓜</h3><i>&yen;198.00/个</i><p>火热预售中</p><a href="detail.html" target="_self">点击了解更多</a></div>
+						</li>
+						<li class="more"><a href="#">更多品种</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>	
+	</div>
+	<!-- 底部 -->
+	<div id="public-footer">
+		<div id="public-container">
+			<img src="img/footer.png">
+			<ul>
+				<li id="one"><i></i>西安市碑林区二环创意设计中心4-102</li>
+				<li id="two"><i></i>400-077-5757</li>
+				<li id="three"><i></i>surpassingco@163.com</li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script>
+	$(function(){
+		$(".groupdiv ul li .rsp").hide();	
+		$(".groupdiv ul li").hover(function(){
+			$(this).find(".rsp").stop().fadeTo(500,0.5)
+			$(this).find(".text").stop().animate({left:'0'}, {duration: 500})
+		},
+		function(){
+			$(this).find(".rsp").stop().fadeTo(500,0)
+			$(this).find(".text").stop().animate({left:'350'}, {duration: "fast"})
+			$(this).find(".text").animate({left:'-350'}, {duration: 0})
+		});
+	});
+	</script>
+</body>
+</html>

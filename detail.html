@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		$(document).ready(function(){
+			//获得文本框对象
+   			var t = $("#text_box");
+			//初始化数量为1,并失效减
+			$('#min').attr('disabled',true);
+    		//数量增加操作
+    		$("#add").click(function(){    
+        		t.val(parseInt(t.val())+1)
+        		if (parseInt(t.val())!=1){
+            		$('#min').attr('disabled',false);
+        		}
+      
+    		}) 
+    		//数量减少操作
+    		$("#min").click(function(){
+        		t.val(parseInt(t.val())-1);
+        		if (parseInt(t.val())==1){
+            		$('#min').attr('disabled',true);
+        		}
+      
+    		})
+		});
+	</script> 
+</head>
+<body>
+	<div id="public-detail">
+		<div id="header-bar">
+			<a href="index.html">
+				<i></i>返回首页
+			</a>
+			<p>商品详情</p>
+		</div>
+		<div id="content">
+			<div id="left-info">
+				<ul>
+					<li id="infoli1"><img src="img/info1.jpg"></li>
+					<li id="infoli2"><img src="img/info2.jpg"></li>
+					<li id="infoli3"><img src="img/info3.jpg"></li>
+				</ul>
+			</div>
+			<div id="main-info">
+				<div class="infodiv">
+					<div id="info1"><img src="img/main1.png"></div>
+					<div id="info2" style="display:none;"><img src="img/main2.png"></div>
+					<div id="info3" style="display:none;"><img src="img/main3.png"></div>
+				</div>
+				<div class="text-info">
+					<h3>双色冰淇淋西瓜</h3>
+					<h5>酥脆细嫩&nbsp;&nbsp;入口即化&nbsp;&nbsp;多汁欲滴</h5>
+					<i>&yen;198.00/个</i>
+					<div id="address">
+      					<label for="address">配送到：</label>
+      					<select id="city">
+      						<option value="0" selected>西安</option>
+      						<option value="1">咸阳</option>
+      					</select>
+      					<select id="district1">
+      						<option value="0" selected>碑林区</option>
+      						<option value="1">新城区</option>
+      						<option value="2">雁塔区</option>
+      						<option value="3">莲湖区</option>
+      						<option value="4">灞桥区</option>
+      						<option value="5">未央区</option>
+      						<option value="6">阎良区</option>
+      						<option value="7">临潼区</option>
+      						<option value="8">长安区</option>
+      						<option value="9">高陵区</option>
+      						<option value="10">户县</option>
+      					</select>
+      					&nbsp;快递:0.00元
+      				</div>
+					<div id="count">
+						<label for="count">数量：</label>
+						<input id="min" name="" type="button" value="-" />  
+						<input id="text_box" name="" type="text" value="1" />  
+						<input id="add" name="" type="button" value="+" />件
+						<label for="count">&nbsp;库存:999件</label>  
+					</div>
+					<a href="#"><div id="buy">立即购买</div></a>
+					<a href="#"><div id="cart">加入购物车</div></a>
+				</div>
+			</div>
+			<div id="side-bar">
+				<ul>
+					<li>
+						<div id="old1"><img src="img/sprite1.png"></div>
+						<div id="new1" style="display:none;"><img src="img/sprite4.png"></div>
+					</li>
+					<li>
+						<div id="old2"><img src="img/sprite2.png"></div>
+						<div id="new2" style="display:none;"><img src="img/sprite5.png"></div>
+					</li>
+					<li>
+						<div id="old3"><img src="img/sprite3.png"></div>
+						<div id="new3" style="display:none;"><img src="img/sprite6.png"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		chose();
+	</script>
+	<div id="public-footer">
+		<div id="public-container">
+			<img src="img/footer.png">
+			<ul>
+				<li id="one"><i></i>西安市碑林区二环创意设计中心4-102</li>
+				<li id="two"><i></i>400-077-5757</li>
+				<li id="three"><i></i>surpassingco@163.com</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

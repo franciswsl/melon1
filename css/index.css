@@ -1,0 +1,75 @@
+
+body{min-width: 1391px;}
+
+/*轮播图片*/
+#index-banner{position: relative;height: 800px;overflow: hidden;}
+#banner-container{position: relative;margin: 0 auto;width: 1920px;}
+#index-banner ul{width: 120px;height: 20px;position: absolute;left: 920px;top: 750px;z-index: 4;}
+#index-banner ul li{width: 14px;height: 14px;border-radius: 50%;border: 1px solid #fff;margin-right: 11px;display: inline-block;}
+#index-banner ul li.on{background-color: #fff;border: none;}
+#banner-list a{position: absolute;}
+
+/*头部*/
+#index-header{width: 300px;height: 124px;float:left;position: absolute;left: 0;top: 0;background-color: transparent;z-index: 999;}
+#register{width: 60px;height: 28px;font-size: 20px;float: left;margin: 48px 40px 48px 87px;font-family: 'SourceHanSansCN-Light';color: #678532;}
+#login{width: 60px;height: 28px;font-size: 20px;float: left;margin: 48px 0;font-family: 'SourceHanSansCN-Light';color: #678532;}
+
+/*导航*/
+#index-main{width: 100%;height: 480px;}
+#public-container{position: relative;margin: 0 auto;width: 1390px;}
+.navbar{height:44px; border-bottom:9px solid #d2d7d9;margin-top:36px;-webkit-transform: translateX(5px);}
+.navbar li{float: left;display:block; height:44px;width:81px;text-align:center;margin-left:290px;font-size: 25px;color: #d2d7d9;font-family: '方正兰亭特黑-GBK';cursor:pointer;}
+.navbar .checked,.navbar li:hover{color:#678532;border-bottom: 9px solid #678532;}
+.groupdiv{margin: 66px auto 0;}
+.groupdiv ul li{float:left;display:block;overflow:hidden;position:relative;}
+.groupdiv ul .pro1{margin: 0 48px 0 10px;box-shadow: 6px 6px 7px #a9a9a8;}
+.groupdiv ul .pro2,.groupdiv ul .pro3{margin-right: 48px;box-shadow: 6px 6px 7px #a9a9a8;}
+.groupdiv ul li .photo{width:350px;height:280px;overflow:hidden;}
+.groupdiv .rsp{width:350px;height:280px;overflow:hidden;position: absolute;background:#eaf1e9;top:0px;left:0px;}
+.groupdiv .text{position:absolute;width:350px;height:280px;left:-370px;top:0px;overflow:hidden;}
+.groupdiv .text h3{width:350px;margin:48px auto 21px 32px;color:#678532;font-size:29px;font-family: '方正兰亭黑-GBK';}
+.groupdiv .text i{font-family: 'PFDinTextCompPro-ThinItal';color: #678532;margin: 0 auto 0 34px;font-size: 24px;font-weight: 600;}
+.groupdiv .text p{font-family: '文悦新青年体-NC-W8';color: #678532;margin: 40px auto 12px 32px;font-size: 24px;}
+.groupdiv .text a{font-family: '方正兰亭黑-GBK';color: #678532;font-size: 18px;margin-left: 32px;}
+.groupdiv .text div{text-align:center;}
+#group2{display: none;}
+#group3{display: none;}
+.groupdiv ul .more{width: 143px;height: 55px;border: 3px solid #678532;font-size: 25px;border-radius: 8px;text-align: center;line-height: 55px;-webkit-transform: translate(30px,110px);font-family: '方正兰亭黑-GBK';}
+
+/*商品详情头部*/
+#public-detail{width: 100%;height: 970px;background: #eaf1e9;}
+#header-bar{height: 110px;background-image: url(../img/header.png);background-repeat: no-repeat;font-size: 24px;}
+#header-bar a{float: left;color: #fff;font-family: 'SourceHanSansCN-Light';line-height: 90px;margin: 0 86px 0 70px;}
+#header-bar a i{width: 26px;height: 26px;background-image: url(../img/icon1.png);background-repeat: no-repeat;transform: translateY(4px);margin-right: 10px;}
+#header-bar p{float: left;color: #fff;font-family: 'SourceHanSansCN-Light';line-height: 90px;}
+
+/*商品详情*/
+#left-info{width: 174px;height: 568px;margin: 105px 48px auto 240px;float: left;}
+#left-info ul li{width: 174px;height: 174px;background: #fff;margin-bottom: 23px;}
+#left-info img{width: 150px;height: 150px;margin: 12px;}
+#main-info{width: 1024px; height: 568px;float: left;margin: 105px 0 auto;background: #fff;}
+.infodiv{width: 518px;height: 518px;background: #eaf1e9;margin: 26px 38px 24px 26px;float: left;background-image: url(../img/icon2.png);background-repeat: no-repeat;}
+.text-info{float: left;}
+.text-info h3{font-size: 35px;font-family: '方正兰亭特黑-GBK';margin: 69px auto 8px 0;}
+.text-info h5{font-size: 18px;font-family: '方正兰亭黑-GBK';color: #678532;margin-bottom: 32px;}
+.text-info i{font-family: 'PFDinTextCompPro-ThinItal';font-size: 30px;margin-bottom: 32px;}
+.text-info #address{font-size: 16px;font-family: '方正兰亭黑-GBK';margin-bottom: 36px;}
+.text-info #count{font-size: 16px;font-family: 'Microsoft Yahei';}
+#count #text_box{width: 30px;text-align: center;}
+#count #min,#count #add{width: 20px;}
+.text-info #buy,.text-info #cart{margin-top: 66px;width: 140px;height: 40px;float: left;text-align: center;line-height: 40px;font-size: 22px;font-family: '方正兰亭黑-GBK';}
+.text-info #buy{color: #678532;background: #eaf1e9;margin-right: 25px;}
+.text-info #cart{color: #fff;background: #678532;}
+#side-bar{width: 64px;height: 158px;background: #d2d7d9;float: left;margin-top: 105px;}
+#side-bar ul{margin: 5px 20px;}
+#side-bar ul li{width: 23px;height: 23px;margin: 20px 0;}
+/*底部*/
+#public-footer{height: 224px;overflow: hidden;margin-top: 36px;}
+#public-footer img{margin: 0 auto;position: relative;}
+#public-footer ul{position: absolute;width: 900px;height: 22px;transform: translateY(-100px);}
+#public-footer ul li{float: left;margin-left: 72px;color: #678532;}
+#public-footer #one{font-family: '方正兰亭黑-GBK';font-size: 18px;}
+#public-footer #one i{width: 15px;height: 19px;background-image: url(../img/contact1.png);background-repeat: no-repeat;transform: translateY(5px);margin-right: 18px;}
+#public-footer #two,#public-footer #three{font-family: 'PFDinTextCompPro-ThinItal';font-size: 20px;}
+#public-footer #two i{width: 16px;height: 16px;background-image: url(../img/contact2.png);background-repeat: no-repeat;transform: translateY(2px);margin-right: 18px;}
+#public-footer #three i{width: 18px;height: 13px;background-image: url(../img/contact3.png);background-repeat: no-repeat;transform: translateY(3px);margin-right: 18px;}
